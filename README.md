@@ -45,7 +45,7 @@
    git clone https://github.com/your-username/CodeSensei.git
    cd CodeSensei
 
-Set up Python environment
+##Set up Python environment
 
 bash
 Copy
