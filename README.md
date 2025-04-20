@@ -1,103 +1,112 @@
-# 💻 CodeSensei
 
-**CodeSensei** is an AI-powered coding assistant built using FastAPI and Groq's language models. It helps developers and non-programmers alike write, understand, and explore code using natural language. Whether you're debugging, learning a new concept, or generating boilerplate code — CodeSensei is your go-to companion.
+# 💡 CodeSensei
+
+**CodeSensei** is an AI-powered coding assistant that helps you write, understand, and explore code using natural language. Whether you're debugging, learning a new language, or need help generating code, CodeSensei is your go-to companion.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 🔍 **Explain Mode** – Understand complex code in plain English.
-- ⚡ **Generate Mode** – Instantly generate code snippets or entire functions.
-- 💬 **Ask Mode** – Ask anything related to programming concepts or syntax.
-- 🤖 **Auto Mode** – Smart suggestions based on input context.
-- 🌙 **Light/Dark Themes** – Switch between themes to reduce eye strain.
-- 🧼 **Clean UI** – Aesthetic and distraction-free interface.
-- 📤 **Real-Time Responses** – Thanks to Groq's lightning-fast inference API.
+- 🔍 **Explain Mode** – Understand complex code in simple terms.
+- ⚡ **Generate Mode** – Instantly generate code snippets or algorithms.
+- 💬 **Ask Mode** – Ask questions about programming concepts or syntax.
+- 🧠 **Auto Mode** – Context-aware suggestions as you type.
+- 🌙 **Light/Dark Themes** – Easily toggle between day and night modes.
+- 🧼 **Clean UI** – Minimal, focused interface for seamless productivity.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer     | Technology                             |
-|-----------|-----------------------------------------|
-| Frontend  | HTML, CSS, JavaScript                   |
-| Styling   | Custom CSS (Dark/Light Mode toggle)     |
-| Backend   | FastAPI                                 |
-| AI Engine | Groq API (LLaMA-4: `meta-llama/llama-4-scout-17b-16e-instruct`) |
-| Deployment| Localhost / Cloud                       |
+| Layer        | Tech                        |
+|--------------|-----------------------------|
+| Frontend     | HTML, CSS, JavaScript       |
+| Styling      | Pure CSS                    |
+| Backend      | FastAPI                     |
+| AI Engine    | Meta LLaMA-4-Scout-17B      |
+| Deployment   | Localhost / Custom Hosting  |
 
 ---
 
-## 🚀 Getting Started
+## 🧑‍💻 Getting Started
 
-### 📦 Prerequisites
+### Prerequisites
 
-- Python 3.9+
-- pip and virtualenv
-- Groq API Key
+- Python (v3.9+)
+- `pip`, `virtualenv`
+- Access to Groq API (Meta LLaMA model)
 
----
+## 🔧 Frontend Setup (Pure HTML/CSS/JS)
 
-### 🧠 Backend Setup (FastAPI + Groq API)
+```bash
+# Clone the repo
+git clone https://github.com/your-username/CodeSensei.git
+cd CodeSensei
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/CodeSensei.git
-   cd CodeSensei
+## 🧠 Backend Setup (FastAPI + Groq API)
 
-#Set up Python environment
-
-
+### Create virtual environment
+```bash
 python -m venv venv
-# Activate the virtual environment:
-# On Windows:
-venv\Scripts\activate
-# On Mac/Linux:
-source venv/bin/activate
-#Install dependencies
+source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+```
 
-
+### Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-#Run the FastAPI server
+### Run FastAPI server
+```bash
 uvicorn app.main:app --reload
+```
 
-#🔐 Don't forget to add your Groq API key in a .env file or directly inside the groq_api.py.
+---
 
-#🖥️ Frontend Setup (Vanilla HTML/CSS/JS)
-Just open index.html in your browser. No build tools required!
+## ⚠️ Make sure the Groq API key is added in your `.env` file and the model used is supported (e.g., `meta-llama/llama-4-scout-17b-16e-instruct`).
 
-Or serve it with a lightweight server:
-cd frontend
-python -m http.server
-📁 Project Structure
-css
+---
 
-#CodeSensei/
+## 📁 Project Structure
+```bash
+CodeSensei/
 │
 ├── app/
 │   ├── main.py
-│   ├── groq_api.py
-│   └── templates/
-│       └──index.html
+│   └── groq_api.py
+│
 ├── static/
-├ └──style.css
-├ └── app.js
-├── requirements.txt
-└── README.md
-🖼️ Screenshots
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   └── index.html
+│
+├── .env
+├── README.md
+└── requirements.txt
+```
+---
+## ✨ Screenshots
+- Light Mode  
+![Light Mode](https://github.com/user-attachments/assets/0b5783a9-bca7-4f20-84e4-74e30ca7df89)
+
+- Dark Mode  
+![Dark Mode](https://github.com/user-attachments/assets/fc240cf5-bad1-44b4-8383-8cef60482d57)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+## 🙌 Acknowledgements
+- Meta’s LLaMA
+- FastAPI
+- Groq API
+- HTML/CSS/JS
+
+---
 
 
-📄 License
-This project is licensed under the MIT License.
-
-🙌 Acknowledgements
-Groq
-
-FastAPI
-
-Meta LLaMA
-
-[Vanilla JS + CSS] for fast and flexible UI
-
-Crafted with 💙 for devs, by devs.
