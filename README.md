@@ -1,35 +1,50 @@
-🚀 CodeSensei
-CodeSensei is an AI-powered coding assistant that helps developers and non-programmers alike understand, generate, and explore code using natural language. Built with FastAPI and powered by Groq's blazing-fast language models, CodeSensei simplifies coding one prompt at a time.
+# 💻 CodeSensei
 
-🧠 Features
-🔍 Explain Mode – Break down complex code into easy-to-understand explanations.
+**CodeSensei** is an AI-powered coding assistant built using FastAPI and Groq's language models. It helps developers and non-programmers alike write, understand, and explore code using natural language. Whether you're debugging, learning a new concept, or generating boilerplate code — CodeSensei is your go-to companion.
 
-⚡ Generate Mode – Instantly generate code snippets or entire functions.
+---
 
-💬 Ask Mode – Ask any programming-related question and get meaningful responses.
+## ✨ Features
 
-🤖 Auto Mode – Intelligent, context-aware suggestions.
+- 🔍 **Explain Mode** – Understand complex code in plain English.
+- ⚡ **Generate Mode** – Instantly generate code snippets or entire functions.
+- 💬 **Ask Mode** – Ask anything related to programming concepts or syntax.
+- 🤖 **Auto Mode** – Smart suggestions based on input context.
+- 🌙 **Light/Dark Themes** – Switch between themes to reduce eye strain.
+- 🧼 **Clean UI** – Aesthetic and distraction-free interface.
+- 📤 **Real-Time Responses** – Thanks to Groq's lightning-fast inference API.
 
-🌙 Light/Dark Theme – Switch between light and dark modes for comfortable coding.
+---
 
-💡 Clean UI – Minimal, modern interface designed for focus and productivity.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+| Layer     | Technology                             |
+|-----------|-----------------------------------------|
+| Frontend  | HTML, CSS, JavaScript                   |
+| Styling   | Custom CSS (Dark/Light Mode toggle)     |
+| Backend   | FastAPI                                 |
+| AI Engine | Groq API (LLaMA-4: `meta-llama/llama-4-scout-17b-16e-instruct`) |
+| Deployment| Localhost / Cloud                       |
 
-Layer	Tech
-Frontend	HTML, CSS (custom styled), Vanilla JS
-Backend	FastAPI
-AI Engine	Groq API (Meta’s LLaMA 4 model)
-Deployment	Localhost / Any hosting provider
-⚙️ Getting Started
-🔧 Backend Setup (FastAPI + Groq API)
-Clone the repository
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/CodeSensei.git
-cd CodeSensei
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Python 3.9+
+- pip and virtualenv
+- Groq API Key
+
+---
+
+### 🧠 Backend Setup (FastAPI + Groq API)
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/CodeSensei.git
+   cd CodeSensei
+
 Set up Python environment
 
 bash
