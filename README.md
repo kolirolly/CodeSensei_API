@@ -45,46 +45,35 @@
    git clone https://github.com/your-username/CodeSensei.git
    cd CodeSensei
 
-##Set up Python environment
+#Set up Python environment
 
-bash
-Copy
-Edit
+
 python -m venv venv
 # Activate the virtual environment:
 # On Windows:
 venv\Scripts\activate
 # On Mac/Linux:
 source venv/bin/activate
-Install dependencies
+#Install dependencies
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
-Run the FastAPI server
 
-bash
-Copy
-Edit
+#Run the FastAPI server
 uvicorn app.main:app --reload
-🔐 Don't forget to add your Groq API key in a .env file or directly inside the groq_api.py.
 
-🖥️ Frontend Setup (Vanilla HTML/CSS/JS)
+#🔐 Don't forget to add your Groq API key in a .env file or directly inside the groq_api.py.
+
+#🖥️ Frontend Setup (Vanilla HTML/CSS/JS)
 Just open index.html in your browser. No build tools required!
 
 Or serve it with a lightweight server:
-
-bash
-Copy
-Edit
 cd frontend
 python -m http.server
 📁 Project Structure
 css
-Copy
-Edit
-CodeSensei/
+
+#CodeSensei/
 │
 ├── app/
 │   ├── main.py
